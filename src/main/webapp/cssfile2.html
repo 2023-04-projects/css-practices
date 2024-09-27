@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame-like Layout with Div</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .content {
+            width: 80%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .frame-like {
+            border: 1px solid #000;
+            height: 200px;
+            margin-bottom: 10px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="frame-like">Frame-like Sidebar 1</div>
+        <div class="frame-like">Frame-like Sidebar 2</div>
+    </div>
+    <div class="content">
+        <div class="frame-like">Frame-like Content 1</div>
+        <div class="frame-like">Frame-like Content 2</div>
+    </div>
+</body>
+</html>

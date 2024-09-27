@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>some css content</title>
+<style type="text/css">
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.box-top {
+	flex: 1;
+	border: 4px solid blue;
+	padding: 20px;
+	margin: 10px;
+	background-color: #326665;
+}
+
+.box-bottom-container {
+	display: grid;
+	grid-template-columns: 100px; /* 1st column */
+	grid-auto-columns: 1150px; /* all the others */
+	grid-auto-flow: column;
+	height: 70vh;
+}
+
+.box-bottom-container-left {
+	flex: 1;
+	border: 4px solid blue;
+	padding: 20px;
+	margin: 10px;
+	background-color: #c29d36;
+}
+
+.box-bottom-container-right {
+	flex: 1;
+	border: 4px solid blue;
+	padding: 20px;
+	margin: 10px;
+	background-color: #a88d42;
+}
+</style>
+</head>
+<body>
+	<div class="cotainer">
+		<div class="box-top"></div>
+		<div class="box-bottom-container">
+			<div class="box-bottom-container-left">
+				<a href="left.html" target="#bright">click
+					here </a>
+			</div>
+			<div id="bright" class="box-bottom-container-right"></div>
+		</div>
+	</div>
+
+</body>
+</html>
